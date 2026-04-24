@@ -5,19 +5,13 @@
 }
 
 :root {
-  --bg: #0a0a0a;
-  --bg-secondary: #111111;
-  --text: #a0a0a0;
-  --text-light: #ffffff;
-  --accent: #64ffda;
-  --accent-hover: #4cdbc0;
-  --border: #333333;
-  --card-bg: #161616;
-  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --bg: #f8f9fa;
+  --text: #333;
+  --accent: #1b4332;
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -29,13 +23,13 @@ body {
   flex-direction: column;
 }
 
+/* Navbar - stays dark to match hero */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
-  background: var(--bg-secondary);
-  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 5%;
+  background: #1b4332;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -44,11 +38,11 @@ body {
 .nav-brand {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text-light);
+  color: white;
 }
 
 .nav-brand span {
-  color: var(--accent);
+  color: #64ffda;
 }
 
 .nav-links {
@@ -57,7 +51,7 @@ body {
 }
 
 .nav-links a {
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -65,31 +59,28 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent);
+  color: #64ffda;
 }
 
 .main-content {
   flex: 1;
-  padding: 0 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
   width: 100%;
 }
 
 .footer {
-  padding: 2rem 3rem;
+  padding: 2rem 5%;
   text-align: center;
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border);
-  color: var(--text);
+  background: #111;
+  color: #888;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem 1.5rem;
+    padding: 1rem 5%;
   }
   
-  .main-content {
-    padding: 0 1.5rem;
+  .nav-links {
+    gap: 1.5rem;
   }
 }

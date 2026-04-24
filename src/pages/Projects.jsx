@@ -2,7 +2,7 @@ import './Projects.css'
 
 const projects = [
   {
-    name: "LightLayer",
+    name: "InsightLayer",
     description: "AI Document Q&A System — A full-stack RAG application enabling semantic search and natural language queries across uploaded PDF/TXT documents. Built a hybrid search combining vector similarity and BM25 keyword matching with cross-encoder re-ranking, improving retrieval accuracy by 25%.",
     tech: ["Python", "FastAPI", "LangChain", "PostgreSQL", "Llama"],
     github: "https://github.com/mec-256/lightlayer"
